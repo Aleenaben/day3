@@ -1,0 +1,17 @@
+<div class="text-nowrap bg-body-secondary border" style="width: 10rem;">
+   <h1 class="container d-flex align-item-center"> Todo</h1>
+  </div>
+<div class="container d-flex justify-content-center align-item-center">
+    <div class="box">
+        @for(item of data;track item.id)
+        {
+            <div class="d-flex align-item-center">
+            <input [checked]="item.completed" type="checkbox" name="" id="">
+            <p [class.cross]="item.completed" class="m=0 px-5 py-2">{{item.title}}</p>
+           <!-- <p class="d-flex align-items-center">{{item.title}}</p>-->
+            </div>
+        }
+    </div>
+</div>
+
+
